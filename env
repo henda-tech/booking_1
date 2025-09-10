@@ -1,0 +1,15 @@
+PORT=4000
+MONGO_HOST=localhost
+MONGO_PORT=27017
+MONGO_DB=cabdb
+MONGO_USER=cab_user
+MONGO_PASS=cab_password
+# Example full URI overrides host/port/db/user/pass if provided
+# MONGO_URI=mongodb://cab_user:cab_password@localhost:27017/cabdb?authSource=admin
+JWT_SECRET=KgmOtPRZAHEIjJYRqKsaLuv612CZAXY5Xb9vHKOb3EO4jABfCGHviOj3wnaS5d4
+MONGO_URI=mongodb+srv://cab_user:cab_password@dev.cfffjwq.mongodb.net/cabdb?retryWrites=true&w=majority&appName=dev
+
+AUTH_JWKS_URL=https://authservice.capitalinvestmenttradingplc.com/.well-known/jwks.json
+# Expected issuer and audience (set to values provided by auth service)
+AUTH_ISSUER=https://authservice.capitalinvestmenttradingplc.com/
+AUTH_AUDIENCE=userservice-for-ride-app
